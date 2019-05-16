@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Mattias favorit film</title>
-  <link href="mall.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotellwebbplats</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Phantasm</h1>
-  <img src="bilder/Phantasm.jpg" alt="Bild från filmen Phantasm">
   <div class="grid">
-    <p>
-      Phantasm är en skräck film som släpptes 1979. Filmen handlar om Mike, Reggie och Jody. De upptäcker att det finns en mysktisk man som själ kroppar från kyrkogårdar. Det blir deras uppgift att stoppa honom. Mannen har inget namn men kallas för "the tall
-      man" av karaktärerna. "The tall man" är en odödlig varelse som vandrar genom tiderna och själ kroppar. Han väcker sedan liv i kropparna igen och gör dem till hans slavar. Vad jag tycker gör filmen så bra är att ressigören ger väldigt lite information om
-      "the tall man" och allt mysktisk som händer. Filmen kräver att tittaren själv pusslar ihop mycket av dem konstiga sakerna som händer och drar sina egna slutsatser.
+    <!--grid används för den genrella layouten-->
 
-    </p>
+    <header>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/hotellBild6.jpg" alt="bild ett slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild14.jpeg" alt="bild två slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild3.jpg" alt="bild tre slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild11.jpg" alt="bild tre slideshow" class="bilderSlide">
+        </div>
+      </div>
+    </header>
+
+    <div class="grid2">
+      <!--grid2 används för att kontrollera menyn-->
+      <a class="linkNotText" href="index.html"> STARTSIDA </a>
+      <a class="linkNotText" href="bokning.html"> BOKNING </a>
+      <a class="linkNotText" href="kontakta.html"> KONTAKTA </a>
+      <a class="linkNotText" href="hitta.html"> HITTA </a>
+    </div>
+
+    <div class="vansterSpalt">
+      <img id="hotellbild" src="images/hotellBild23.jpg" alt="Bild på ett fint hotell" />
+      <p class="textVansterSpalt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed sapien in augue malesuada blandit. In ullamcorper diam feugiat nulla pretium interdum. Mauris non odio est. Nunc tristique, urna sit amet lacinia sagittis, dolor dui pulvinar sapien,
+        et scelerisque lectus nisl non risus. Suspendisse cursus tristique magna, non auctor lacus faucibus at. Aliquam fermentum nisl ac augue sollicitudin, eu sagittis metus fermentum. Nunc ac massa sed libero mollis luctus. Aenean in orci et neque
+        consequat rhoncus sit amet et sapien. Nunc nec urna sed erat eleifend ultricies. Proin luctus purus eu nisi ornare condimentum. Ut convallis vel diam quis aliquet. Vestibulum dui erat, auctor id egestas eget, fringilla sit amet ipsum.
+        <br><br>Maecenas eleifend nibh eget eros ullamcorper pellentesque. Cras scelerisque tortor id magna dictum pulvinar. Etiam fringilla dolor quis feugiat ultricies. Mauris hendrerit, risus sed vestibulum molestie, mi urna volutpat libero, nec vulputate
+        risus velit eu est. Nulla vestibulum congue blandit. Sed scelerisque neque sem, ut pellentesque lorem sagittis eu. Morbi ut lobortis libero, id viverra sem. Phasellus tincidunt elementum ultrices. Donec fermentum a tortor sed consectetur.
+      </p>
+    </div>
+
+    <div class="hogerSpalt">
+
+      <div class="grid3">
+        <img id="hotellbild2" src="images/hotellBild24.jpg" alt="Bild på ett fint hotell" />
+      </div>
+      <p class="textHogerSpalt"> Nunc nec urna sed erat eleifend ultricies. Proin luctus purus eu nisi ornare condimentum. Ut convallis vel diam quis aliquet. Vestibulum dui erat, auctor id egestas eget, fringilla sit amet ipsum.
+        <br><br>Maecenas eleifend nibh eget eros ullamcorper pellentesque. Cras scelerisque tortor id magna dictum pulvinar. Etiam fringilla dolor quis feugiat ultricies. Mauris hendrerit, risus sed vestibulum molestie, mi urna volutpat libero, nec vulputate
+        risus velit eu est. Nulla vestibulum congue blandit. Sed scelerisque neque sem, ut pellentesque lorem sagittis eu. Morbi ut lobortis libero, id viverra sem. Phasellus tincidunt elementum ultrices. Donec fermentum a tortor sed consectetur.
+        <br><br>Pellentesque habitant <a class="linkText" href="https://www.google.com/search?q=example&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiJjcSrjp3iAhXHXRUIHTksAlQQ_AUIDigB&biw=812&bih=651">morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas. Donec mattis cursus risus, eu sagittis sem condimentum consequat. Praesent sem mi, lacinia eget molestie eu, tincidunt molestie mi. Phasellus
+        et massa fermentum risus sagittis pulvinar. Donec sed interdum metus. Nunc mi velit, tempus ac nulla nec, molestie scelerisque sem. Phasellus et ligula quam. Duis efficitur cursus turpis ac ultrices. Cras ac vulputate mi. Etiam pharetra porttitor
+        turpis, vulputate condimentum magna facilisis ut. Duis maximus tincidunt est, imperdiet efficitur nunc pulvinar ac. Integer tristique ex eleifend eleifend dictum.
+        <br>vulputate condimentum magna facilisis ut. Duis maximus tincidunt est, imperdiet efficitur nunc pulvinar ac. Integer tristique ex eleifend eleifend dictum. Donec euismod enim ullamcorper mollis eleifend. sed vestibulum molestie, mi urna volutpat.
+        Maecenas eleifend nibh eget eros ullamcorper pellentesque. Cras scelerisque tortor id magna dictum pulvinar.
+        <br><br>Praesent venenatis erat convallis mi sagittis ultrices. Nunc non euismod ex. Curabitur sapien lorem, aliquet nec tellus a, pulvinar efficitur velit. Fusce sit amet eleifend metus, in consequat nulla. Morbi nec dolor hendrerit, gravida
+        dolor nec, venenatis eros. In sed placerat nisi. Aenean lobortis ex vel lacus laoreet convallis. Nullam tincidunt dignissim erat.
+      </p>
+
+
+    </div>
+
+    <footer>
+      <p class="footerText">Vår kontaktinformation:<br>Adress: Ringgatan15<br><a href="mailto:testadress@mail.com" target="_blank">E-post: mattias.larsson@gmail.com</a><br>Telfon nr: 0705196646</p>
+    </footer>
   </div>
-</body>
 
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+  </script>
+</body>
 
 </html>

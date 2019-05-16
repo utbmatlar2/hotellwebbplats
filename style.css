@@ -1,0 +1,431 @@
+@media only screen and (max-width: 800px) {
+  /*body {
+    background-color: RED
+  }*/
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .linkNotText{
+    font-size: 18px;
+    padding: 5px 0px 5px 0px;
+  }
+  header {
+    grid-area: 1/auto/auto/span 2;
+  }
+  .vansterSpalt {
+    grid-area: auto/auto/auto/span 2;
+  }
+  .hogerSpalt {
+    grid-area: 5/1/auto/span 2;
+  }
+  footer {
+    grid-area: 6/1/auto/span 2;
+  }
+  #hotellbild {
+    max-width: 600px;
+  }
+  .textVansterSpalt {
+    max-width: 600px;
+  }
+  /*Hitta*/
+  .mapouter {
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+  }
+  .kartOmrode {
+    width: 100%;
+    height: 400px;
+  }
+  /*Bokning*/
+  .spaltBokning {
+    width: 100vw;
+    height: 100%;
+  }
+  .boxFormular {
+    margin-bottom: 13px;
+  }
+  .labelFormular {
+    font-size: 19px;
+    font-family: 'Merriweather', serif;
+    color: #0C0116;
+  }
+  .placeholderFormular {
+    font-size: 19px;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    color: #0C0116;
+  }
+  /*Kontakta*/
+  #hotellbild5 {
+    width: 0;
+    height: 0;
+  }
+  .vansterKontakta {
+    width: 100vw;
+  }
+  .textKontakta {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /*body {
+    background-color: BLUE
+  }*/
+  footer {
+    grid-area: 4/1/auto/span 2;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .linkNotText{
+    font-size: 20px;
+    padding:10px 0px 10px 0px;
+  }
+  .grid {
+    grid-template-columns: 3fr 6fr;
+  }
+  .vansterSpalt {
+    margin-right: 2vw;
+  }
+  .mapouter {
+    /*Denna som ska ändras för att ändra storleken på kartan*/
+    height: 90%;
+    width: 70%;
+    /*LÄGG TILL MAX_WIDTH??*/
+    padding-top: 4%;
+  }
+  /*Bokning*/
+  .spaltBokning {
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 30px;
+    height: 90%;
+  }
+  .boxFormular {
+    margin-bottom: 20px;
+  }
+  .labelFormular {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: #0C0116;
+  }
+  .placeholderFormular {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    color: #0C0116;
+  }
+  /*Kontakta*/
+  .gridKontakta {
+    grid-template-columns: 3fr 4fr;
+  }
+  .vansterKontakta {
+    margin-right: 20px;
+  }
+  #hotellbild5 {
+    width: 100%;
+    height: 100%;
+  }
+  .textKontakta {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  /*HITTA*/
+  .kartOmrode {
+    height: 600px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 4fr 1fr 24fr 1fr;
+  /*Kan eventuellt ta bort denna raden. Verkar förstöra mer än vad den hjälper*/
+  height: 100vh;
+  width: 100vw;
+}
+.linkText{
+  font-size: 1em;
+}
+
+.footerText {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+header {
+  background-color: #8C8FFF;
+  grid-area: auto / auto / auto / span 2;
+  width: 100vw;
+  height: 97%;
+  /*Ändra denna till "vw" för att påverka den med grid*/
+}
+
+.bilderSlide {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+}
+
+.grid2 {
+  display: grid;
+  width: 100vw;
+  grid-area: 2/ 1 / auto / span 2;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+a {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Merriweather', serif;
+  color: #0C0116;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #E6E6E6;
+}
+
+.vansterSpalt {
+  background-color: #312481;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#hotellbild {
+  display: inline-block;
+  margin-top: 16px;
+  width: 90%;
+  /*Lägg till detta i mediaquries sen?*/
+}
+
+.textVansterSpalt {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+  font-size: 20px
+}
+
+.hogerSpalt {
+  background-color: #89A7FF;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+#hotellbild2 {
+  /*Slå ihop dessa två bilder i ett bildbehandlingsprogram så att du kan fixa så att bredden på texten och på de båda bilderna blir samma*/
+  display: inline-block;
+  margin-top: 16px;
+  width: 90%;
+  max-width: 700px;
+}
+
+#hotellbild3 {
+  display: inline-block;
+  width: 100%;
+}
+
+.textHogerSpalt {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+  max-width: 700px;
+  font-size: 20px;
+}
+
+footer {
+  display: block;
+  background-color: #B4C7FF;
+  font-family: 'Merriweather', serif;
+  color: #0C0116;
+  width: 100vw;
+  height: 80%;
+  margin-top: 25px;
+  /*DETTA SKA NOG VARA I MEDIA QUERIES SÅ ATT MOBILLÄGET INTE FÅR STORT GAP TILL HEADER*/
+  margin-bottom: 25px;
+}
+
+/*Hitta 2019-04-03 DU JOBBADE MED GOOGLEMAPS JOBBA PÅ ATT GÖRA KARTAN STÖRRE OCH LÄGGA TILL MARGINS, SAMT EVENTUELLT SKRIV UT ADRESSEN UNDER KARTAN*/
+
+.grid1Hitta {
+  display: grid;
+  grid-template-rows: 4fr 1fr 10fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.kartOmrode {
+  background-color: #928BC8;
+  text-align: center;
+  width: 100%;
+  /*Lägg till i Mediaqueries så att höjden är mindre i mobilläge*/
+}
+
+.mapouter {
+  /*Denna som ska ändras för att ändra storleken på kartan*/
+  display: inline-block;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  ;
+  width: 100%;
+}
+
+#gmap_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  /*Verkar inte göra något denna selektorn*/
+  width: 100%;
+  height: 100%;
+}
+
+/*Detta är för kontakta sidan TÄNK PÅ ATT FIXA E-POST INTE HELA SYNS*/
+
+.gridKontakta {
+  display: grid;
+  grid-template-rows: 4fr 1fr 24fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.vansterKontakta {
+  background-color: #7A4DA3;
+  height: 100%;
+}
+
+.hogerKontakta {
+  width: 100%;
+  height: 100%;
+}
+
+.textKontakta {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#textKontaktaRubrik {
+  font-size: 30px;
+}
+
+#hotellbild5 {
+  display: block;
+}
+
+/*Detta är för bokningssidan*/
+
+.spaltBokning {
+  background-color: #2E0552;
+}
+
+/*Formulär*/
+
+.formular {
+  text-align: center;
+}
+
+.navbar .nav>li>a {
+  color: #000000;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-main {
+  background-color: #FFFFFF;
+}
+
+.container {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.booking {
+  padding-bottom: 80px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -0px;
+}
+
+/*SLIDESHOW*/
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.0s;
+  animation-name: fade;
+  animation-duration: 4.0s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.1
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1
+  }
+  to {
+    opacity: 1
+  }
+}

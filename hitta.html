@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotellwebbplats</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="grid1Hitta">
+    <!--grid används för den genrella layouten-->
+
+    <header>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/hotellBild6.jpg" alt="bild ett slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild14.jpeg" alt="bild två slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild3.jpg" alt="bild tre slideshow" class="bilderSlide">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/hotellBild11.jpg" alt="bild tre slideshow" class="bilderSlide">
+        </div>
+      </div>
+    </header>
+
+    <div class="grid2">
+      <!--grid2 används för att kontrollera menyn-->
+      <a class="linkNotText" href="index.html"> STARTSIDA </a>
+      <a class="linkNotText" href="bokning.html"> BOKNING </a>
+      <a class="linkNotText" href="kontakta.html"> KONTAKTA </a>
+      <a class="linkNotText" href="hitta.html"> HITTA </a>
+    </div>
+    <div class="kartOmrode">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=ringgatan%2015&t=&z=13&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+          <a href="https://www.emojilib.com">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footerText">Vår kontaktinformation:<br>Adress: Ringgatan15<br><a href="mailto:testadress@mail.com" target="_blank">E-post: mattias.larsson@gmail.com</a><br>Telfon nr: 0705196646</p>
+    </footer>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
